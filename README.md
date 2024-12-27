@@ -1,12 +1,13 @@
-# Problem Statement
-**Context:** As a Data Analyst at Podha, the company is facing a budget crunch and needs to optimize its marketing strategy. The company aims to focus on one marketing campaign, but to make this decision, we must first understand product performance, customer behavior, and overall profitability.
+# 🛠️ Business Task
+As a Data Analyst at Podha, the company is facing a budget crunch and needs to optimize its marketing strategy. The company aims to focus on one marketing campaign, but to make this decision, we must first understand product performance, customer behavior, and overall profitability.
 Objective: The goal of this analysis is to identify the most profitable products, the most valuable customers, and the effectiveness of campaigns to determine the best course of action for Podha’s marketing spend.
 
 ## Data Overview
 **Data Source:** The data includes *customer transactions*, *campaign performance*, and *product information*.
-*Data Structure:* The data is stored in a SQL database, requiring some cleaning (e.g., converting text to dates, removing duplicates) for analysis.
 
-# Steps in Analysis
+**Data Structure:** The data is stored in a SQL database, requiring some cleaning (e.g., converting text to dates, removing duplicates) for analysis.
+
+# ⁉️ Analysis
 **Product Performance & Profitability:**
 Determine which products generate the highest profit margins and sales volume.
 
@@ -14,9 +15,9 @@ Determine which products generate the highest profit margins and sales volume.
 Identify the highest-spending customer segments and those with the most frequent orders.
 
 **Campaign Effectiveness:**
-Determine which campaigns bring in the most revenue and provide the best return on investment (ROI).
+Determine which campaigns bring in the most revenue, provide the best return on investment (ROI) and determine budget allocation for each.
 
-## SQL Techniques Used:
+# 📅 SQL Techniques Used
 **CTEs:** Used to break down complex queries into simpler parts for clarity and efficiency (e.g., segmenting customer data).
 
 **Aggregations:** Applied for calculating total profits, customer spend, and sales.

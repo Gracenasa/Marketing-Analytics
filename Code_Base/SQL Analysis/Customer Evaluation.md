@@ -104,3 +104,38 @@ ORDER BY
 
 
 ### 3. Customer distibution per region
+```TSQL
+SELECT
+	DISTINCT("Country") as "Countries",
+	EXTRACT(YEAR FROM TO_DATE("OrderDate", 'DD/MM/YYYY')) AS "Year",
+	COUNT(DISTINCT("CustID")) AS "Customers"
+FROM 
+	public."Orders"
+GROUP BY
+	"Countries", "Year"
+ORDER BY 
+	"Year", "Customers" desc;
+```
+| Country         | Year | Customers |
+|-----------------|------|-----------|
+| United States   | 2020 | 849       |
+| Australia       | 2020 | 848       |
+| United Kingdom  | 2020 | 255       |
+| France          | 2020 | 229       |
+| Germany         | 2020 | 226       |
+| Canada          | 2020 | 223       |
+| United States   | 2021 | 3434      |
+| Australia       | 2021 | 2163      |
+| United Kingdom  | 2021 | 993       |
+| Germany         | 2021 | 869       |
+| France          | 2021 | 826       |
+| Canada          | 2021 | 806       |
+| United States   | 2022 | 4119      |
+| Australia       | 2022 | 2278      |
+| United Kingdom  | 2022 | 1146      |
+| Germany         | 2022 | 1026      |
+| France          | 2022 | 1001      |
+| Canada          | 2022 | 932       |
+
+
+

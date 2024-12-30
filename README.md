@@ -34,4 +34,6 @@ A dashboard was created to visualize key metrics such as:
 3. Campaign performance and ROI.
 4. The dashboard allows stakeholders to interact with and explore the findings visually, enhancing data-driven decision-making.
 
+Read my business report on my analysis [here](https://hashnode.com/draft/6772e8cb175bc92fd30a0588)
+
 

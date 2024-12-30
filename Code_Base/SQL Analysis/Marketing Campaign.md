@@ -66,14 +66,19 @@ SELECT
     "AcquisitionSource",
     TO_CHAR(
     	ROUND(("Total Revenue")::NUMERIC, 2), '$99,999,999'
-    )AS "Total Revenue",
+    )AS "Total Revenue ($)",
     TO_CHAR("Total Orders", '99,999'),
     TO_CHAR(
     	ROUND(("CAC")::NUMERIC, 2), '99.99%'
-    )AS "CAC"
+    )AS "CAC (%)"
 FROM CACData
 ORDER BY "CAC" ASC;
 ```
+| Acquisition Source | Total Revenue ($)   | Total Orders | CAC (%) |
+|--------------------|-------------|-------------|----------------------|
+| Yt-Campaign        | $2,478,366  | 5,642       | 43.93%               |
+| Google-ads         | $19,840,204 | 44,649      | 44.44%               |
+| Meta-ads           | $2,572,408  | 5,618       | 45.79%               |
 
 
 ### 3. Fraud rate for each campaign strategy
@@ -164,4 +169,15 @@ GROUP BY
 ORDER BY 
 	"Year", "Orders Made" DESC;
 ```
+| AcquisitionSource | Year | Orders Made|
+|--------------------|------|-------------|
+| Google-ads         | 2020 | 2,120       |
+| Yt-Campaign        | 2020 | 259         |
+| Meta-ads           | 2020 | 251         |
+| Google-ads         | 2021 | 9,759       |
+| Meta-ads           | 2021 | 2,239       |
+| Yt-Campaign        | 2021 | 2,229       |
+| Google-ads         | 2022 | 11,168      |
+| Yt-Campaign        | 2022 | 2,673       |
+| Meta-ads           | 2022 | 2,644       |
 
